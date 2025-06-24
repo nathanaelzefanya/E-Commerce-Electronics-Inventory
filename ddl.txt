@@ -1,0 +1,20 @@
+URL dataset : https://www.kaggle.com/datasets/keyushnisar/global-product-inventory-dataset-2025
+
+CREATE TABLE table_m3 (
+	"Product ID" VARCHAR(10) PRIMARY KEY,
+	"Product Name" VARCHAR(50),
+	"Product Category" VARCHAR (50),
+	"Product Description" TEXT,
+	"Price" NUMERIC(20,2),
+	"Stock Quantity" INTEGER,
+	"Warranty Period" INTEGER,
+	"Product Dimensions" VARCHAR(50),
+	"Manufacturing Date" DATE,
+	"Expiration Date" DATE,
+	"SKU" VARCHAR (10),
+	"Product Tags" TEXT,
+	"Color/Size Variations" VARCHAR(100),
+	"Product Ratings" INTEGER
+)
+
+\copy table_m3 FROM 'H:dataset_raw.csv' WITH (FORMAT csv, DELIMITER ',', HEADER true);

@@ -1,0 +1,45 @@
+1.  NoSQL:
+
+    NoSQL atau Not Only SQL adalah sebuah basis data yang berfungsi untuk melakukan penyimpanan dan pengelolaan data.
+    Terdapat 4 tipe penyimpanan database dengan NoSQL, yaitu key-value, Column-based, Graph-Based, dan Document-Oriented.
+    Penyimpanan data dengan basis NoSQL sebaiknya dilakukan untuk data dalam jumlah yang besar dan tidak terstruktur
+    karena sifatnya yang fleksibel untuk diintegrasikan ke banyak server.
+
+2.  Kapan harus menggunakan NoSQL atau Relational Database Management System:
+    
+    NoSQL digunakan untuk data dalam jumlah besar yang bentuknya tidak terstruktur dan/atau semi-structured serta membutuhkan perubahan
+    secara cepat/real-time. Oleh sebab itu, NoSQL cocok digunakan salah satunya untuk web atau aplikasi yang melakukan update dengan real-time.
+
+    RDBMS digunakan untuk data tabular / telah tetap strukturnya dan digunakan untuk melakukan integrasi data antar tabel dan pengelolaan data
+    yang bersifat ACID (Atomicity, Consistency, Isolation dan Durability). RDBMS cocok digunakan untuk pengelolaan data yang sifatnya rigid, salah satu
+    contohnya seperti data nasabah di bank.
+
+3. Dua contoh tools/platform NoSQL selain ElasticSearch beserta keunggulannya masing-masing:
+
+    Selain ElasticSearch, dua contoh platform NoSQL lainnya adalah:
+    1.  MongoDB, yaitu platform NoSQL yang dapat menyimpan data dengan format / value yang fleksibel, contohnya JSON dan BSON. Platform ini cocok 
+        digunakan untuk aplikasi yang membutuhkan skema dinamis, karena aplikasi tersebut dapat tersusun dari berbagai jenis data yang berbeda. 
+        Selain itu, MongoDB memiliki sistem query yang baik untuk melakukan indexing dan agregasi data.
+
+    2.  Apache Cassandra, yaitu platform NoSQL yang dapat menyimpan data dalam jumlah yang besar dengan arsitektur berbasis node dan cluster, 
+        contohnya adalah Netflix. Platform ini cocok untuk digunakan pada aplikasi yang terus melakukan update data. Platform ini memiliki sistem yang terdesentralisasi, 
+        sehingga apabila terdapat error pada salah satu node, sistem tetap dapat berjalan karena data direplikasi secara otomatis ke node-node lainnya.
+
+4.  Airflow:
+
+    Apache Airflow adalah platform untuk melakukan otomatisasi pemrosesan dan komputasi data yang bersifat kompleks. Pengerjaan tugas dengan Airflow dilakukan 
+    dalam bentuk DAG (Directed Acyclic Graph), yaitu serangkaian tugas yang diatur untuk dijalankan secara berurutan sesuai alur yang telah ditentukan. 
+    DAG membuat pemrosesan data yang terjadwal lebih mudah dan terstruktur.
+
+5.  Great Expectations:
+    
+    Great Expectations adalah tools untuk melakukan validasi dengan standar untuk data yang akan dianalisis. Tools ini dapat mengurangi potensi kesalahan 
+    input pada data. Contohnya adalah untuk pengisian data nama pelanggan, yang hanya boleh menggunakan karakter huruf alfabet dan tanpa angka.
+
+6.  Batch Processing:
+
+    Batch Processing adalah sebuah metode untuk melakukan otomatisasi pemrosesan data secara berkelompok / batch. 
+    Metode ini digunakan untuk melakukan tugas secara terjadwal, seperti sistem payroll / penggajian karyawan, transaksi perbankan, 
+    update data pada e-commerce, laporan analisis data, serta pemrosesan data dalam sistem big data. Tools yang digunakan pada umumnya 
+    adalah Python sebagai bahasa pemrograman dan SQL untuk melakukan pengelolaan database. Untuk memproses dan menjadwalkan batch data dalam jumlah besar,
+    tools yang lazim digunakan adalah Apache Airflow.
