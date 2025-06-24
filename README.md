@@ -4,7 +4,7 @@
 
 Project ini terdiri dari file:
 ```
-1. description.md - Penjelasan gambaran umum project.
+1. README.md - Penjelasan gambaran umum project.
 2. DAG.py - File DAG untuk workflow menggunakan Apache Airflow.
 3. DAG_graph.jpg - Visualisasi DAG workflow dari Airflow.
 4. GX.ipynb - Notebook untuk melakukan validasi data dengan Great Expectations.
